@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy file JAR vào container
-COPY target/demo-0.0.1-SNAPSHOT.jar app.jar
+COPY target/k8s-demo-0.0.1-SNAPSHOT.jar app.jar
 
 # Chạy ứng dụng
 ENTRYPOINT ["java", "-jar", "app.jar"]
