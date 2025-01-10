@@ -11,7 +11,7 @@ spec:
     template:
         metadata:
             labels:
-                app: demo-spring
+                app: backend
         spec:
             containers:
                 - image: dockerphucnnd/spring-boot-k8s:latest
