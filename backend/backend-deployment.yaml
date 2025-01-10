@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    name: demo-spring
+    name: backend
 spec:
     replicas: 1
     revisionHistoryLimit: 3
     selector:
         matchLabels:
-            app: demo-spring
+            app: backend
     template:
         metadata:
             labels:
@@ -15,6 +15,6 @@ spec:
         spec:
             containers:
                 - image: dockerphucnnd/spring-boot-k8s:latest
-                  name: demo-spring
+                  name: backend
                   ports:
                       - containerPort: 80
