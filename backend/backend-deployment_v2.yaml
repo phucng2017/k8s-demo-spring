@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: backend
+spec:
+    replicas: 3
+    revisionHistoryLimit: 3
+    selector:
+        matchLabels:
+            app: backend
+    template:
+        metadata:
+            labels:
+                app: backend
+            annotations:
+                deploymentTimestamp: "{{ .Release.Time }}"  # Tạo timestamp để force update
+        spec:
+            containers:
+                - image: dockerphucnnd/spring-boot-k8s:latest
+                  name: backend
+                  imagePullPolicy: Always
+                  ports:
+                      - containerPort: 80
+                  env:
+                      - name: FORCE_UPDATE
+                        value: "timestamp-{{ now | date \"20060102150405\" }}"  # Biến môi trường tạo timestamp
