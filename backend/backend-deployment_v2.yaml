@@ -6,6 +6,13 @@ spec:
     # replicas: 3
     minReplicas: 1
     maxReplicas: 3
+    metrics:
+        - type: Resource
+          resource:
+            name: memory
+            target:
+                type: Utilization
+                averageUtilization: 70
     revisionHistoryLimit: 3
     selector:
         matchLabels:
