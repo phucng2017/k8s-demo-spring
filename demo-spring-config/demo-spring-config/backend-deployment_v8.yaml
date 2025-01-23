@@ -30,7 +30,7 @@ spec:
                   name: backend-demo-spring
                   imagePullPolicy: Always
                   ports:
-                      - containerPort: 80
+                      - containerPort: 8080
                   env:
                       - name: FORCE_UPDATE
                         value: "timestamp-{{ now | date \"20060102150405\" }}"  # Biến môi trường tạo timestamp
