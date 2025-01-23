@@ -1,14 +1,12 @@
 --> chỉnh cách chạy docker:
-docker build -t demo-spring-backend --platform linux/amd64 .
+
 
 docker tag demo-spring-backend demo-spring-backend:latest
-docker buildx build --platform linux/amd64,linux/arm64 -t demo-spring-backend .
+(DE THAM THAO THOI)
 docker buildx build --platform linux/arm64 -t demo-spring-backend .
-docker push dockerphucnnd/demo-spring-backend:latest
 
-HOAC:
-docker buildx build --platform linux/amd64 -t dockerphucnnd/demo-spring-backend:latest --push .
 
+HOAC: (CÂU LỆNH NÀY CHẠY NHÉ)
 docker buildx build -t dockerphucnnd/demo-spring-backend:latest --push .
 
 
