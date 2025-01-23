@@ -11,7 +11,7 @@ public class HelloController {
     private static final Logger logger = LoggerFactory.getLogger(HelloController.class);
 
 
-    @GetMapping("/helloword")
+    @GetMapping("/helloworld")
     public String hello() {
         System.out.println("Hello from Spring Boot on Kubernetes!");
         logger.info("Đây là log INFO");

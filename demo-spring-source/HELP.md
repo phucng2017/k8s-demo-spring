@@ -1,3 +1,11 @@
+--> chỉnh cách chạy docker:
+docker tag demo-spring-backend:latest dockerphucnnd/demo-spring-backend:latest
+docker build -t demo-spring-backend:latest --platform linux/amd64 .
+docker push dockerphucnnd/demo-spring-backend:latest
+
+Deploy lên k8s:
+kubectl apply -f https://raw.githubusercontent.com/phucng2017/k8s-demo-spring/refs/heads/master/backend/backend-deployment_v2.yaml
+
 # Read Me First
 The following was discovered as part of building this project:
 
