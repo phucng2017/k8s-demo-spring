@@ -9,6 +9,9 @@ docker push dockerphucnnd/demo-spring-backend:latest
 HOAC:
 docker buildx build --platform linux/amd64 -t dockerphucnnd/demo-spring-backend:latest --push .
 
+docker buildx build -t dockerphucnnd/demo-spring-backend:latest --push .
+
+
 Deploy lên k8s:
 kubectl apply -f https://raw.githubusercontent.com/phucng2017/k8s-demo-spring/refs/heads/master/backend/backend-deployment_v2.yaml
 
