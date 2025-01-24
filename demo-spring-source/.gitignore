@@ -1,0 +1,191 @@
+# Ignore all target directories
+target/
+
+# Ignore specific files in the target directory
+**/target/*
+
+# Ignore all .class files
+*.class
+
+# Ignore all .jar files
+*.jar
+
+# Ignore all .war files
+*.war
+
+# Ignore all .ear files
+*.ear
+
+# Ignore all .iml files (IntelliJ IDEA module files)
+*.iml
+
+# Ignore all .idea directories (IntelliJ IDEA project files)
+.idea/
+
+# Ignore all .DS_Store files (Mac OS X)
+.DS_Store
+
+# Ignore all .project and .classpath files (Eclipse)
+.project
+.classpath
+
+# Ignore all .settings directories (Eclipse)
+.settings/
+
+# Ignore all .vscode directories (Visual Studio Code)
+.vscode/
+
+# Ignore all .nb-gradle directories (NetBeans)
+.nb-gradle/
+
+# Ignore all .gradle directories (Gradle)
+.gradle/
+
+# Ignore all build directories (Gradle)
+build/
+
+# Ignore all out directories (IntelliJ IDEA)
+out/
+
+# Ignore all logs directories
+logs/
+
+# Ignore all dependency-reduced-pom.xml files
+dependency-reduced-pom.xml
+
+# Ignore all .factorypath files (Eclipse)
+.factorypath
+
+# Ignore all .cache directories
+.cache/
+
+# Ignore all .mvn directories
+.mvn/
+
+# Ignore all .m2 directories (Maven local repository)
+.m2/
+
+# Ignore all .npm directories
+.npm/
+
+# Ignore all .node directories
+.node/
+
+# Ignore all .yarn directories
+.yarn/
+
+# Ignore all .yarn-integrity files
+.yarn-integrity
+
+# Ignore all .yarnrc files
+.yarnrc
+
+# Ignore all .pnp.js files
+.pnp.js
+
+# Ignore all .pnp.cjs files
+.pnp.cjs
+
+# Ignore all .pnp.loader.mjs files
+.pnp.loader.mjs
+
+# Ignore all .pnp.loader.cjs files
+.pnp.loader.cjs
+
+# Ignore all .pnp.loader.js files
+.pnp.loader.js
+
+# Ignore all .pnp.loader.cjs files
+.pnp.loader.cjs
+
+# Ignore all .pnp.loader.mjs files
+.pnp.loader.mjs
+
+# Ignore all .pnp.loader.js files
+.pnp.loader.js
+
+# Ignore all .pnp.loader.cjs files
+.pnp.loader.cjs
+
+# Ignore all .pnp.loader.mjs files
+.pnp.loader.mjs
+
+# Ignore all .pnp.loader.js files
+.pnp.loader.js
+
+# Ignore all .pnp.loader.cjs files
+.pnp.loader.cjs
+
+# Ignore all .pnp.loader.mjs files
+.pnp.loader.mjs
+
+# Ignore all .pnp.loader.js files
+.pnp.loader.js
+
+# Ignore all .pnp.loader.cjs files
+.pnp.loader.cjs
+
+# Ignore all .pnp.loader.mjs files
+.pnp.loader.mjs
+
+# Ignore all .pnp.loader.js files
+.pnp.loader.js
+
+# Ignore all .pnp.loader.cjs files
+.pnp.loader.cjs
+
+# Ignore all .pnp.loader.mjs files
+.pnp.loader.mjs
+
+# Ignore all .pnp.loader.js files
+.pnp.loader.js
+
+# Ignore all .pnp.loader.cjs files
+.pnp.loader.cjs
+
+# Ignore all .pnp.loader.mjs files
+.pnp.loader.mjs
+
+# Ignore all .pnp.loader.js files
+.pnp.loader.js
+
+# Ignore all .pnp.loader.cjs files
+.pnp.loader.cjs
+
+# Ignore all .pnp.loader.mjs files
+.pnp.loader.mjs
+
+# Ignore all .pnp.loader.js files
+.pnp.loader.js
+
+# Ignore all .pnp.loader.cjs files
+.pnp.loader.cjs
+
+# Ignore all .pnp.loader.mjs files
+.pnp.loader.mjs
+
+# Ignore all .pnp.loader.js files
+.pnp.loader.js
+
+# Ignore all .pnp.loader.cjs files
+.pnp.loader.cjs
+
+# Ignore all .pnp.loader.mjs files
+.pnp.loader.mjs
+
+# Ignore all .pnp.loader.js files
+.pnp.loader.js
+
+# Ignore all .pnp.loader.cjs files
+.pnp.loader.cjs
+
+# Ignore all .pnp.loader.mjs files
+.pnp.loader.mjs
+
+# Ignore all .pnp.loader.js files
+.pnp.loader.js
+
+# Ignore all .pnp.loader.cjs files
+.pnp.loader.cjs
+
+# Ignore all .pnp.loader.mjs files

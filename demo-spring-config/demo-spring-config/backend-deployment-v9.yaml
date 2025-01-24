@@ -1,35 +1,36 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    name: backend
+    name: backend-demo-spring
+    namespace: backend
 spec:
-    # replicas: 3
-    minReplicas: 1
-    maxReplicas: 3
-    metrics:
-        - type: Resource
-          resource:
-            name: memory
-            target:
-                type: Utilization
-                averageUtilization: 70
+    replicas: 3
+    # minReplicas: 1
+    # maxReplicas: 3
+    # metrics:
+    #     - type: Resource
+    #       resource:
+    #         name: memory
+    #         target:
+    #             type: Utilization
+    #             averageUtilization: 70
     revisionHistoryLimit: 3
     selector:
         matchLabels:
-            app: backend
+            app: backend-demo-spring
     template:
         metadata:
             labels:
-                app: backend
+                app: backend-demo-spring
             annotations:
                 deploymentTimestamp: "{{ .Release.Time }}"  # Tạo timestamp để force update
         spec:
             containers:
-                - image: dockerphucnnd/spring-boot-k8s:latest
-                  name: backend
+                - image: dockerphucnnd/demo-spring-backend:2.0
+                  name: backend-demo-spring
                   imagePullPolicy: Always
                   ports:
-                      - containerPort: 80
+                      - containerPort: 8080
                   env:
                       - name: FORCE_UPDATE
                         value: "timestamp-{{ now | date \"20060102150405\" }}"  # Biến môi trường tạo timestamp
