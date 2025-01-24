@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: backend-demo-spring
+    namespace: backend
+spec:
+    replicas: 3
+    # minReplicas: 1
+    # maxReplicas: 3
+    # metrics:
+    #     - type: Resource
+    #       resource:
+    #         name: memory
+    #         target:
+    #             type: Utilization
+    #             averageUtilization: 70
+    revisionHistoryLimit: 3
+    selector:
+        matchLabels:
+            app: backend-demo-spring
+    template:
+        metadata:
+            labels:
+                app: backend-demo-spring
+            annotations:
+                deploymentTimestamp: "{{ .Release.Time }}"  # Tạo timestamp để force update
+        spec:
+            containers:
+<<<<<<<< HEAD:demo-spring-config/demo-spring-config/backend-deployment-v9.yaml
+                - image: dockerphucnnd/demo-spring-backend:2.0
+========
+                - image: dockerphucnnd/demo-spring-backend:latest
+>>>>>>>> c8bcaa851897030e35441c60da8f3af631230bb2:demo-spring-config/demo-spring-config/backend-deployment_v8.yaml
+                  name: backend-demo-spring
+                  imagePullPolicy: Always
+                  ports:
+                      - containerPort: 8080
+                  env:
+                      - name: FORCE_UPDATE
+                        value: "timestamp-{{ now | date \"20060102150405\" }}"  # Biến môi trường tạo timestamp
