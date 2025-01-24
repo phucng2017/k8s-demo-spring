@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    name: backend-demo-spring
+    name: backend-demo-spring-3
     namespace: backend
 spec:
     replicas: 3
@@ -17,17 +17,17 @@ spec:
     revisionHistoryLimit: 3
     selector:
         matchLabels:
-            app: backend-demo-spring
+            app: backend-demo-spring-3
     template:
         metadata:
             labels:
-                app: backend-demo-spring
+                app: backend-demo-spring-3
             annotations:
                 deploymentTimestamp: "{{ .Release.Time }}"  # Tạo timestamp để force update
         spec:
             containers:
                 - image: dockerphucnnd/demo-spring-backend:latest
-                  name: backend-demo-spring
+                  name: backend-demo-spring-3
                   imagePullPolicy: Always
                   ports:
                       - containerPort: 8080
