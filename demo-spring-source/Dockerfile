@@ -2,7 +2,8 @@
 # FROM --platform=linux/amd64 node:lts-alpine
 
 # Sử dụng hình ảnh base Java
-FROM openjdk:17-jdk-slim
+# FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jdk
 
 # Đặt thư mục làm việc
 WORKDIR /app
