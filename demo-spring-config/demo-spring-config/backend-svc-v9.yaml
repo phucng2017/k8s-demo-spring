@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-    name: backend-demo-spring
+    name: backend-demo-spring-3
     namespace: backend
 spec:
     ports:
-        - port: 80
+        - port: 83
           targetPort: 8080
     selector:
-        app: backend-demo-spring
+        app: backend-demo-spring-3
