@@ -10,7 +10,10 @@ docker buildx build --platform linux/amd64 -t demo-spring-backend .
 
 HOAC: (CÂU LỆNH NÀY CHẠY NHÉ)
 docker buildx build -t dockerphucnnd/demo-spring-backend:v4.0 --push .
+
 docker buildx build -t dockerphucnnd/demo-spring-backend:v2.0 --platform linux/amd64  --push .
+--> NO OK
+
 docker buildx build -t dockerphucnnd/demo-spring-backend:v3.0 --platform linux/amd64  --push .
 
 

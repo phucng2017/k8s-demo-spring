@@ -26,7 +26,7 @@ spec:
                 deploymentTimestamp: "{{ .Release.Time }}"  # Tạo timestamp để force update
         spec:
             containers:
-                - image: dockerphucnnd/demo-spring-backend:2.0
+                - image: dockerphucnnd/demo-spring-backend:4.0
                   name: backend-demo-spring
                   imagePullPolicy: Always
                   ports:
