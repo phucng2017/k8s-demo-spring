@@ -35,5 +35,5 @@ spec:
                       - name: FORCE_UPDATE
                         value: "timestamp-{{ now | date \"20060102150405\" }}"  # Biến môi trường tạo timestamp
 
-            nodeSelector:
-                kubernetes.io/arch: arm64
+            # nodeSelector:
+            #     kubernetes.io/arch: arm64
